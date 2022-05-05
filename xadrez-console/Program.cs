@@ -18,6 +18,8 @@ namespace xadrez_console
             Console.WriteLine("Tabuleiro: " + tab);
 
 
+            Tela.imprimirTabuleiro(tab);
+
         }
     }
 }
