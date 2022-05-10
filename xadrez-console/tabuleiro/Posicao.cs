@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+
 namespace tabuleiro
 {
     class Posicao
@@ -18,6 +20,12 @@ namespace tabuleiro
         {
             return linha + ", " + coluna;
                 ;
+        }
+
+        internal void definirValores(int linha, int coluna)
+        {
+            this.linha = linha;
+            this.coluna = coluna;
         }
     }
 }
