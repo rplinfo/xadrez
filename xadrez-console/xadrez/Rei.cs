@@ -23,25 +23,25 @@ namespace xadrez
 
             //acima
             pos.definirValores(posicao.linha - 1, posicao.coluna);
-            if (tab.posicalValida(pos) && podeMover(pos))
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
             //ne
             pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
-            if (tab.posicalValida(pos) && podeMover(pos))
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
             //direita
             pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
-            if (tab.posicalValida(pos) && podeMover(pos))
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
             //se
             pos.definirValores(posicao.linha - 1, posicao.coluna);
-            if (tab.posicalValida(pos) && podeMover(pos))
+            if (tab.posicaoValida(pos) && podeMover(pos))
             {
                 mat[pos.linha, pos.coluna] = true;
             }
